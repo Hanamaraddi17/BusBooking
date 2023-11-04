@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:black;  
+    background-image: url('/Busimg/Eicher2.jpeg')
+  
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100vw;
+  }
+  h1 span img{
+    
+    width: 150px;
+    height: 60px;
+    
+  }
+  header h1 {
+    margin: 0;
+    display: inline;
+  }
+  ul{
+    margin-left: 70%;
+    display: flex;
+    font-size: large;
+  }
+   li{
+    justify-content: center;
+    align-items: left;
+    list-style-type: none;
+   
+   }
+   a{
+    font:bold;
+    color:aqua;
+    text-decoration: none;
+   }
+   li::before{
+    content: "|";
+    background-color: #fff;
+    margin-left: 20px;
+    margin-right:2px;
+
+   }
+ 
+  main {
+    padding: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  .about{
+    width:40%;
+    text-align: justify;
+    background-color: transparent;
+    color:black;
+  }
+  .underline{
+    width: 100px;
+    height: 3px;
+    background-color:bisque;
+    border-radius: 2px;
+}
+.about p{
+  background-color:lavender;
+  padding: 6px;
+  border-radius: 5px;
+}
+.about p::before{
+  content: '*  .';
+  text-decoration:double;
+  background-color: #333;
+  border-radius: 10px;
+}

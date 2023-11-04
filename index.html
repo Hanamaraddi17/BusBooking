@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBus</title>
+    
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  </body class="home">
+    <header>
+      <h1><a href="index.html">BookBus</a>
+      </h1>
+        <span><nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+        </ul>
+      </nav></span>
+    </header>
+    <main>
+      <form>
+        <label for="from">From:</label>
+        <input list="places"type="text" id="from" name="from">
+        <datalist name="from" id="places">
+            <option value="gadag">gadag</option>
+            <option value="banglore">banglore</option>
+            <option value="manglore">manglore</option>
+            <option value="maysur">maysur</option>
+            <option value="Hubli">Hubli</option>
+        </datalist>
+        <label for="destination">Destination:</label>
+        <input list="places" type="text" id="destination" name="destination">
+        <datalist name="from" id="places">
+            <option value="gadag">gadag</option>
+            <option value="banglore">banglore</option>
+            <option value="manglore">manglore</option>
+            <option value="maysur">maysur</option>
+            <option value="Hubli">Hubli</option>
+        </datalist>
+        <span class="visible alert_box">This is an alert box</span>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date">
+        
+        <label for="passengers">Number of passengers:</label>
+        <input type="number" min="1" id="passengers" name="passengers">
+        <button type="submit" id="submit-button">Book Now</button>
+        <canvas id="qrcode"></canvas>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Bookbus  . All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
