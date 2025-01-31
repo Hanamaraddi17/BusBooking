@@ -4,116 +4,161 @@ body {
     padding: 0;
     background-size: cover;
     background-repeat: no-repeat;
-    color:black;  
-    background-image: url('/Busimg/Eicher2.jpeg')
-  
-  }
-  
-  header {
+    background-position: center;
+    color: black;  
+    background-image: url('/Busimg/Eicher2.jpeg');
+}
+
+header {
     background-color: #333;
     color: white;
-    padding: 10px;
-    width: 100vw;
-  }
-  h1 span img{
-    
-    width: 150px;
-    height: 60px;
-    
-  }
-  header h1 {
-    margin: 0;
-    display: inline;
-  }
-  ul{
-    margin-left: 70%;
+    padding: 10px 20px;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+h1 span img {
+    width: 120px;
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    gap: 15px;
     font-size: large;
-  }
-   li{
-    justify-content: center;
-    align-items: left;
-    list-style-type: none;
-   
-   }
-   a{
-    font:bold;
-    color:aqua;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    align-items: center;
+}
+
+a {
+    font-weight: bold;
+    color: aqua;
     text-decoration: none;
-   }
-   li::before{
+}
+
+li::before {
     content: "|";
     background-color: #fff;
-    margin-left: 20px;
-    margin-right:2px;
+    margin-right: 5px;
+}
 
-   }
- 
-  main {
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Main Content */
+main {
     padding: 20px;
-  }
-  
-  form {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    align-items: center;
+}
+
+/* Responsive Form */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 400px;
     margin: 0 auto;
-  }
-  
-  label {
+}
+
+label {
     margin-top: 10px;
-  }
-  
-  input, select {
+}
+
+input, select {
     padding: 10px;
     border-radius: 5px;
     border: none;
     margin-bottom: 20px;
-  }
-  
-  button {
+    width: 100%;
+}
+
+button {
     background-color: #333;
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    position: relative;
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
-  }
-  
-  footer p {
+    margin-top: 20px;
+}
+
+footer p {
     margin: 0;
-  }
-  .about{
-    width:40%;
+}
+
+/* About Section */
+.about {
+    width: 80%;
+    max-width: 600px;
     text-align: justify;
     background-color: transparent;
-    color:black;
-  }
-  .underline{
+    color: black;
+    margin-top: 20px;
+}
+
+.underline {
     width: 100px;
     height: 3px;
-    background-color:bisque;
+    background-color: bisque;
     border-radius: 2px;
 }
-.about p{
-  background-color:lavender;
-  padding: 6px;
-  border-radius: 5px;
+
+.about p {
+    background-color: lavender;
+    padding: 6px;
+    border-radius: 5px;
 }
-.about p::before{
-  content: '*  .';
-  text-decoration:double;
-  background-color: #333;
-  border-radius: 10px;
+
+.about p::before {
+    content: '*  .';
+    text-decoration: double;
+    background-color: #333;
+    border-radius: 10px;
+}
+
+/* Responsive About Section */
+@media (max-width: 768px) {
+    .about {
+        width: 95%;
+    }
 }
