@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,8 +8,12 @@ body {
     background-position: center;
     color: black;  
     background-image: url('/Busimg/Eicher2.jpeg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;  /* Ensure full viewport height */
 }
 
+/* Header */
 header {
     background-color: #333;
     color: white;
@@ -30,6 +35,7 @@ h1 span img {
     height: 50px;
 }
 
+/* Navigation */
 nav {
     display: flex;
 }
@@ -75,13 +81,14 @@ li::before {
 
 /* Main Content */
 main {
+    flex: 1;  /* Pushes footer to the bottom */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Responsive Form */
+/* Form */
 form {
     display: flex;
     flex-direction: column;
@@ -112,14 +119,15 @@ button {
     width: 100%;
 }
 
-/* Footer */
+/* Fixed Footer */
 footer {
-    position: relative;
     background-color: #333;
     color: white;
     padding: 10px;
     text-align: center;
-    margin-top: 20px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
 }
 
 footer p {
